@@ -1,0 +1,28 @@
+{
+	"$schema": "https://raw.githubusercontent.com/untrustedmodders/plugify/refs/heads/main/schemas/plugin.schema.json",
+	"version": "${AS_CHECKCHEATS_VERSION}",
+	"name": "as_checkcheats",
+	"description": "Admin cheat-check module for admin_system (port of the Pisex Metamod:Source module 'CheckCheats'): !check/!cheats opens the check menu (or the 'checkcheats' item of the players admin-menu category), the admin picks a suspect, the suspect submits a social-network contact with !contact, the admin starts the check and closes it with a verdict from configs/admin_system/checkcheats.ini - optionally banning the suspect. Matches the original commands, menu items, phrases and config keys; writes the same checkcheats_stats table through its own plgdb connection. No exported methods.",
+	"author": "Pisex, ported to Plugify",
+	"website": "https://github.com/untrustedmodders/plugify",
+	"license": "GPL-3.0",
+	"entry": "bin/as_checkcheats",
+	"platforms": [],
+	"language": "cpp",
+	"dependencies": [
+		{
+			"name": "s2sdk",
+			"constraints": ">=2.18.2"
+		},
+		{
+			"name": "admin_system",
+			"constraints": ">=1.0.0"
+		},
+		{
+			"name": "hudmenu",
+			"constraints": ">=1.0.0",
+			"optional": true
+		}
+	],
+	"methods": []
+}
